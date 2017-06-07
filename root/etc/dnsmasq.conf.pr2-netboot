@@ -162,7 +162,7 @@ no-hosts
 #dhcp-host=00:23:8b:*:*:*,00:1e:68:*:*:*,10.68.0.2
 
 # Made by Devon Ash, at Clearpath Robotics (TheRobotG0d)
-dhcp-host=00:23:8b:*:*:*,00:1e:68:*:*:*,d0:50:99:*:*:*,10.68.0.2
+dhcp-host=00:23:8b:*:*:*,00:1e:68:*:*:*,d0:50:99:*:*:*,52:54:00:*:*:*,10.68.0.2
 
 # Always set the name of the host with hardware address
 # 11:22:33:44:55:66 to be "fred"
