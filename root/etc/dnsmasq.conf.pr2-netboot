@@ -83,13 +83,13 @@
 # interface (eg eth0) here.
 # Repeat the line for more than one interface.
 interface=lan0
-interface=wlan0
+#interface=wlan0
 
 # Or you can specify which interface _not_ to listen on
 #except-interface=
 # Or which to listen on by address (remember to include 127.0.0.1 if
 # you use this.)
-listen-address=192.168.2.1
+#listen-address=
 # If you want dnsmasq to provide only DNS service on an interface,
 # configure it as shown above, and then use the following line to
 # disable DHCP on it.
@@ -126,13 +126,13 @@ expand-hosts
 
 #dhcp-range=10.68.0.100,10.68.0.199,12h
 dhcp-range=lan0,10.68.0.100,10.68.0.199,12h
-dhcp-range=wlan0,192.168.2.2,192.168.2.254,255.255.255.0,12h
+#dhcp-range=wlan0,192.168.2.2,192.168.2.254,255.255.255.0,12h
 
 
-dhcp-option-force=option:router,192.168.2.1
-dhcp-option-force=option:dns-server,192.168.2.1
-bind-dynamic
-no-hosts
+#dhcp-option-force=option:router,192.168.2.1
+#dhcp-option-force=option:dns-server,192.168.2.1
+#bind-dynamic
+#no-hosts
 # Uncomment this to enable the integrated DHCP server, you need
 # to supply the range of addresses available for lease and optionally
 # a lease time. If you have more than one network, you will need to
@@ -386,7 +386,7 @@ dhcp-boot=pxelinux.0
 #dhcp-script=/bin/echo
 
 # Set the cachesize here.
-cache-size=1500
+#cache-size=1500
 
 # If you want to disable negative caching, uncomment this.
 #no-negcache
